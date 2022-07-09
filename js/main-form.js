@@ -1,0 +1,2 @@
+let forms=document.querySelectorAll("form"),message={loading:"Загрузка",success:"Спасибо, скоро мы с вами свяжемся",failure:"Что-то пошло не так. Попробуйте ещё раз, чуть позже."};function postData(s){s.addEventListener("submit",function(e){e.preventDefault();let t=new XMLHttpRequest;t.open("POST","server.php");e=new FormData(s);t.send(e),t.addEventListener("load",function(){200===t.status?(alert(message.success),s.reset()):alert(message.failure)})})}forms.forEach(function(e){postData(e)});export default postData;
+//# sourceMappingURL=main-form.js.map

@@ -1,0 +1,1 @@
+{"version":3,"file":"script.js","sources":["script.js"],"sourcesContent":["import showImage from './main-slider__bunner.js';\r\nimport postData from './main-form.js';\r\n\r\nlet timer = setInterval(showImage, 14000);\r\n\r\npostData();"],"names":["showImage","postData","let","timer","setInterval"],"mappings":"OAAOA,gDACAC,8BAEPC,IAAIC,MAAQC,YAAYJ,UAAW,MAEnCC"}
